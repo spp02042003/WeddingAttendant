@@ -81,14 +81,14 @@
         </div>
     </nav>
 
-    <!-- 1. 首頁全螢幕封面區塊（寬度調整與資訊卡相同） -->
+    <!-- 1. 首頁全螢幕封面區塊 -->
     <section id="welcome" class="relative min-h-screen flex items-center justify-center pt-20 pb-12 px-2 md:px-4">
         <div class="max-w-4xl w-full mx-auto text-center">
             <div class="relative inline-block w-full p-2 md:p-5 bg-white/85 rounded-2xl paper-shadow border border-stone-200/60 mb-6 backdrop-blur-sm">
                 <div class="absolute -top-3 -left-3 w-8 h-8 border-t-2 border-l-2 border-accent rounded-tl-xl"></div>
                 <div class="absolute -bottom-3 -right-3 w-8 h-8 border-b-2 border-r-2 border-accent rounded-br-xl"></div>
                 
-                <!-- 封面圖：滿版減少空白 -->
+                <!-- 封面圖 -->
                 <div class="overflow-hidden rounded-xl mb-5 shadow-inner relative flex items-center justify-center bg-stone-100/50">
                     <img src="https://i.postimg.cc/P58FTySd/IMG-1037.png" 
                          alt="張家銘 & 柯驊珈 婚禮照片" 
@@ -122,7 +122,7 @@
         </div>
     </section>
 
-    <!-- 2. 婚禮資訊 (資訊卡與插圖並排放置，去除交通與停車指引) -->
+    <!-- 2. 婚禮資訊 -->
     <section id="detail" class="py-16 px-4 max-w-4xl mx-auto">
         <div class="text-center mb-8">
             <h2 class="text-2xl md:text-3xl text-stone-800 font-semibold tracking-wide">婚禮宴席資訊</h2>
@@ -177,7 +177,7 @@
                     </div>
                 </div>
 
-                <!-- 右側：插圖並排 -->
+                <!-- 右側：插圖 -->
                 <div class="shrink-0 flex justify-center items-center p-0 m-0 overflow-hidden">
                     <img src="https://i.postimg.cc/bwXCWXJN/hei-qun-hun-sha.jpg" 
                          alt="Wedding Illustration" 
@@ -187,7 +187,7 @@
         </div>
     </section>
 
-    <!-- 3. 出席回函 (寬度為 max-w-4xl 保持美觀一致) -->
+    <!-- 3. 出席回函 -->
     <section id="rsvp" class="py-16 px-4 max-w-4xl mx-auto">
         <div class="text-center mb-10">
             <h2 class="text-2xl md:text-3xl text-stone-800 font-semibold tracking-wide">出席回函</h2>
@@ -205,7 +205,7 @@
                   id="weddingRsvpForm" 
                   class="space-y-6">
 
-                <!-- 1. 姓名 (Bilingual Label) -->
+                <!-- 1. 姓名 -->
                 <div>
                     <label class="block text-sm font-semibold text-stone-700 mb-1">
                         姓名 <span class="text-xs text-stone-400 font-normal">NAME</span> <span class="text-accent">*</span>
@@ -217,7 +217,7 @@
                            class="w-full px-4 py-3 rounded-xl border border-stone-200 focus:border-accent focus:ring-2 focus:ring-accent/20 outline-none transition-all text-sm bg-stone-50/30">
                 </div>
 
-                <!-- 2. 與新人的關係 (Bilingual Label) -->
+                <!-- 2. 與新人的關係 -->
                 <div>
                     <label class="block text-sm font-semibold text-stone-700 mb-1">
                         與新人的關係 <span class="text-xs text-stone-400 font-normal">RELATIONSHIP</span> <span class="text-accent">*</span>
@@ -226,13 +226,12 @@
                             required 
                             class="w-full px-4 py-3 rounded-xl border border-stone-200 focus:border-accent focus:ring-2 focus:ring-accent/20 outline-none transition-all text-sm bg-stone-50/30">
                         <option value="" disabled selected>請選擇您與新人的關係</option>
-                        <option value="家銘的親友 家銘's friend">家銘的親友</option>
-                        <option value="驊珈的親友 驊珈's friend">驊珈的親友</option>
-                        <option value="共同朋友 Common friend">共同朋友</option>
+                        <option value="家銘的親友 Chia-Ming's relative/friend">家銘的親友 Chia-Ming's relative/friend</option>
+                        <option value="驊珈的親友 Hua-Chia's relative/friend">驊珈的親友 Hua-Chia's relative/friend</option>
                     </select>
                 </div>
 
-                <!-- 3. 是否出席 (Bilingual Label) -->
+                <!-- 3. 是否出席 -->
                 <div>
                     <label class="block text-sm font-semibold text-stone-700 mb-1">
                         是否出席 <span class="text-xs text-stone-400 font-normal">ATTENDANCE</span> <span class="text-accent">*</span>
@@ -243,12 +242,12 @@
                             onchange="checkAttendanceLogic()" 
                             class="w-full px-4 py-3 rounded-xl border border-stone-200 focus:border-accent focus:ring-2 focus:ring-accent/20 outline-none transition-all text-sm bg-stone-50/30">
                         <option value="" disabled selected>請選擇是否出席</option>
-                        <option value="當然，一定到! Yes, I am delighted to attend😀">當然，一定到！</option>
-                        <option value="無法出席，祝福心意到! No, sorry I cannot make it">無法出席，祝福心意到！</option>
+                        <option value="當然，一定到! Yes, I am delighted to attend😀">當然，一定到! Yes, I am delighted to attend😀</option>
+                        <option value="無法參加，但我想留下給你們的祝福 Sorry to miss out">無法參加，但我想留下給你們的祝福 Sorry to miss out</option>
                     </select>
                 </div>
 
-                <!-- 4. 聯絡電話 (Bilingual Label) -->
+                <!-- 4. 聯絡電話 -->
                 <div>
                     <label class="block text-sm font-semibold text-stone-700 mb-1">
                         聯絡電話 <span class="text-xs text-stone-400 font-normal">PHONE</span> <span class="text-accent">*</span>
@@ -260,7 +259,7 @@
                            class="w-full px-4 py-3 rounded-xl border border-stone-200 focus:border-accent focus:ring-2 focus:ring-accent/20 outline-none transition-all text-sm bg-stone-50/30">
                 </div>
 
-                <!-- 5. 參加晚宴人數 (Bilingual Label) -->
+                <!-- 5. 參加晚宴人數 -->
                 <div id="guestCountContainer">
                     <label class="block text-sm font-semibold text-stone-700 mb-1">
                         參加晚宴人數 <span class="text-xs text-stone-400 font-normal">BANQUET GUESTS</span>
@@ -276,7 +275,7 @@
 
                 <!-- 智能表單條件觸發區塊：只有在「參加晚宴人數 > 0」時顯示 -->
                 <div id="dynamicDietarySection" class="space-y-6 hidden border-l-2 border-accent/40 pl-4 py-2 my-4 bg-amber-50/30 rounded-r-2xl">
-                    <!-- 6. 飲食需求 (Bilingual Label) -->
+                    <!-- 6. 飲食需求 -->
                     <div>
                         <label class="block text-sm font-semibold text-stone-700 mb-1">
                             素食/飲食需求人數 <span class="text-xs text-stone-400 font-normal">DIETARY REQUIREMENTS</span>
@@ -289,7 +288,7 @@
                         <p class="text-[11px] text-stone-400 mt-1">請註明需要素食餐點的人數</p>
                     </div>
 
-                    <!-- 7. 是否需要兒童椅 (Bilingual Label) -->
+                    <!-- 7. 是否需要兒童椅 -->
                     <div>
                         <label class="block text-sm font-semibold text-stone-700 mb-1">
                             兒童座椅數量 <span class="text-xs text-stone-400 font-normal">HIGH CHAIRS</span>
@@ -302,7 +301,7 @@
                     </div>
                 </div>
 
-                <!-- 8. 喜帖寄送需求 (Bilingual Label) -->
+                <!-- 8. 喜帖寄送需求 -->
                 <div>
                     <label class="block text-sm font-semibold text-stone-700 mb-1">
                         喜帖寄送需求 <span class="text-xs text-stone-400 font-normal">INVITATION TYPE</span>
@@ -310,24 +309,24 @@
                     <select name="entry.2080928339" 
                             class="w-full px-4 py-3 rounded-xl border border-stone-200 focus:border-accent focus:ring-2 focus:ring-accent/20 outline-none transition-all text-sm bg-stone-50/30">
                         <option value="" disabled selected>請選擇喜帖需求</option>
-                        <option value="需要，請寄電子喜帖給我 Yes, I need digital wedding invitation">需要，請寄電子喜帖給我</option>
-                        <option value="需要，請寄紙本喜帖給我 Yes, I need physical wedding invitation">需要，請寄紙本喜帖給我</option>
-                        <option value="不需要喜帖 No invitation needed">不需要喜帖</option>
+                        <option value="請寄電子喜帖給我 please send digital wedding invitation">請寄電子喜帖給我 please send digital wedding invitation</option>
+                        <option value="請寄紙本喜帖給我 please send wedding invitation card">請寄紙本喜帖給我 please send wedding invitation card</option>
                     </select>
                 </div>
 
-                <!-- 9. 電子郵件 (Bilingual Label) -->
+                <!-- 9. 電子郵件 -->
                 <div>
                     <label class="block text-sm font-semibold text-stone-700 mb-1">
-                        電子信箱 <span class="text-xs text-stone-400 font-normal">EMAIL</span>
+                        電子信箱 <span class="text-xs text-stone-400 font-normal">EMAIL</span> <span class="text-accent">*</span>
                     </label>
                     <input type="email" 
                            name="entry.1521896031" 
+                           required 
                            placeholder="example@email.com" 
                            class="w-full px-4 py-3 rounded-xl border border-stone-200 focus:border-accent focus:ring-2 focus:ring-accent/20 outline-none transition-all text-sm bg-stone-50/30">
                 </div>
 
-                <!-- 10. 寄送地址 (Bilingual Label) -->
+                <!-- 10. 寄送地址 -->
                 <div>
                     <label class="block text-sm font-semibold text-stone-700 mb-1">
                         喜帖寄送地址 <span class="text-xs text-stone-400 font-normal">ADDRESS</span>
@@ -338,7 +337,7 @@
                            class="w-full px-4 py-3 rounded-xl border border-stone-200 focus:border-accent focus:ring-2 focus:ring-accent/20 outline-none transition-all text-sm bg-stone-50/30">
                 </div>
 
-                <!-- 11. 祝福的話 (Bilingual Label) -->
+                <!-- 11. 祝福的話 -->
                 <div>
                     <label class="block text-sm font-semibold text-stone-700 mb-1">
                         給新人的祝福的話 <span class="text-xs text-stone-400 font-normal">BLESSINGS</span>
@@ -366,6 +365,7 @@
         <p class="mt-1 font-light">銘刻於心 珈許永恆 © 2027</p>
     </footer>
 
+    <!-- 成功彈窗 -->
     <div id="successModal" class="fixed inset-0 bg-stone-900/60 backdrop-blur-sm z-50 flex items-center justify-center p-4 hidden">
         <div class="bg-white rounded-3xl p-8 max-w-sm w-full text-center space-y-4 paper-shadow transform transition-all scale-95 opacity-0 duration-300" id="modalCard">
             <div class="w-16 h-16 rounded-full bg-emerald-100 text-emerald-600 flex items-center justify-center mx-auto text-2xl">
@@ -387,30 +387,6 @@
 
     <script>
         window.submitted = false;
-
-        function toggleAccordion(id) {
-            const content = document.getElementById(id);
-            const icon = document.getElementById(id + '-icon');
-            if (!content || !icon) return;
-            
-            if (content.classList.contains('open')) {
-                content.classList.remove('open');
-                content.style.maxHeight = '0px';
-                icon.style.transform = 'rotate(0deg)';
-            } else {
-                document.querySelectorAll('.accordion-content').forEach(el => {
-                    el.classList.remove('open');
-                    el.style.maxHeight = '0px';
-                });
-                document.querySelectorAll('[id$="-icon"]').forEach(ic => {
-                    ic.style.transform = 'rotate(0deg)';
-                });
-
-                content.classList.add('open');
-                content.style.maxHeight = content.scrollHeight + 'px';
-                icon.style.transform = 'rotate(180deg)';
-            }
-        }
 
         function checkAttendanceLogic() {
             const attendanceSelect = document.getElementById('attendanceSelect');
